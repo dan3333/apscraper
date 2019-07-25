@@ -880,3 +880,23 @@ IPDL protocol error: Handler returned error code!
 1561829360677	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sLU2tWXKTbmV"
 1561829362526	Marionette	INFO	Listening on port 38981
 1561829362595	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564066416296	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.K0a2pXudR92k"
+1564066419577	Marionette	INFO	Listening on port 33309
+1564066419629	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564066520402	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xLnIcY3PXq1B"
+1564066523926	Marionette	INFO	Listening on port 35361
+1564066524097	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564067116354	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6Yhscw1IrYi9"
+1564067130929	Marionette	INFO	Listening on port 46743
+1564067131650	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564067320523	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.z86njhuTNKLP"
+1564067346364	Marionette	INFO	Listening on port 35641
+1564067351399	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iQ8R4/y-/l/en_US/xqiS8IZ0WI-.js?_nc_x=D0SIA1I3gJ8, line 1380: unreachable code after return statement
+1564067946627	Marionette	INFO	Stopped listening on port 46743
+1564067946627	Marionette	INFO	Stopped listening on port 33309
+1564067946627	Marionette	INFO	Stopped listening on port 35641
+1564067946630	Marionette	INFO	Stopped listening on port 35361
+1564069050223	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hjpLforauwrM"
+1564069055793	Marionette	INFO	Listening on port 34413
+1564069055895	Marionette	WARN	TLS certificate errors will be ignored for this session

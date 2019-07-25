@@ -3,9 +3,9 @@ from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup
 import pymongo
+import hashlib 
 
-
-myclient = pymongo.MongoClient("mongodb://localhost:27017/", username="dan", password="")
+myclient = pymongo.MongoClient("mongodb://localhost:27017/", username="dan", password="temp_pass")
 mydb = myclient["testdb"]
 mycol = mydb["apartments"]
 
@@ -14,7 +14,8 @@ mycol = mydb["apartments"]
 #x = mycol.insert_one(mydict)
 
 
-profile = FirefoxProfile("/root/.mozilla/firefox/5l4f32wz.default")
+#profile = FirefoxProfile("/root/.mozilla/firefox/5l4f32wz.default")
+profile = FirefoxProfile("/home/danb/.mozilla/firefox/6ne2qskf.default")
 
 driver = webdriver.Firefox(profile)
 driver.get('https://www.facebook.com/groups/161162324086838/')
@@ -38,6 +39,8 @@ for el in elements:
     for text in el.find_all("p"):
         print (text.get_text())
         desc = text.get_text()
+    hash_obj = hashlib.md5(desc.encode())
+    print ("Hash: "+hash_obj.hexdigest())
     mydict = {"name": name, "description": desc}
     x = mycol.insert_one(mydict)
 
