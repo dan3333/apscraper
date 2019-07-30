@@ -14,11 +14,11 @@ mycol = mydb["apartments"]
 #x = mycol.insert_one(mydict)
 
 
-#profile = FirefoxProfile("/root/.mozilla/firefox/5l4f32wz.default")
-profile = FirefoxProfile("/home/danb/.mozilla/firefox/6ne2qskf.default")
+profile = FirefoxProfile("/root/.mozilla/firefox/5l4f32wz.default")
+#profile = FirefoxProfile("/home/danb/.mozilla/firefox/6ne2qskf.default")
 
 driver = webdriver.Firefox(profile)
-driver.get('https://www.facebook.com/groups/161162324086838/')
+driver.get('https://www.facebook.com/groups/599822590152094/')
 
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id('globalContainer'))
 
